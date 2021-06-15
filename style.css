@@ -12,7 +12,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  background-color: #674baf;
+  background: #674baf url("./images/bg-mobile.svg") no-repeat;
+  background-size: contain;
   font-family: "Open Sans", sans-serif;
   color: white;
   padding: 2rem;
@@ -52,6 +53,7 @@ header img {
   line-height: 1.7rem;
 }
 .text button {
+  position: relative;
   width: 250px;
   height: 50px;
   margin-top: 1rem;
@@ -70,6 +72,10 @@ header img {
   color: white;
   line-height: 1.8rem;
 }
+.text button:active {
+  transform: translateY(3px);
+  transition: transform 0.3s ease-in-out;
+}
 
 footer {
   height: 10vh;
@@ -84,10 +90,20 @@ footer i {
   margin: 1rem;
   width: 2.3rem;
   height: 2.3rem;
-  padding-top: 0.4rem;
+  padding-top: 0.5rem;
   text-align: center;
   border: 1px solid white;
   border-radius: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+footer i:hover {
+  color: #e882e8;
+  border-color: #e882e8;
+}
+footer i:active {
+  padding-top: 0.6rem;
+  transition: padding 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
