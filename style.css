@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+  max-width: 700px;
 }
 
 header {
@@ -107,7 +108,7 @@ footer i:active {
   transition: padding 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   body {
     flex-direction: column;
     justify-content: flex-start;
@@ -116,10 +117,10 @@ footer i:active {
     background-size: contain;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
   body {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background: #674baf url("./images/bg-desktop.svg") no-repeat;
     background-size: cover;
